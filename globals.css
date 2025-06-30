@@ -1,11 +1,124 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@800;900&display=swap');
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@800;900&display=swap');
-        
+    .office-card {
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.office-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.support-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary);
+}
+
+.support-card:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateX(10px);
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary), var(--accent));
+  left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  left: 15px;
+  top: 5px;
+}
+
+.social-hover {
+  transition: all 0.3s ease;
+}
+
+.social-hover:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 5px 10px rgba(59, 130, 246, 0.5));
+}
+
+.input-glow:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  border-color: var(--primary);
+}
+
+.btn-glow {
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+  transform: translateY(-3px);
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+  transition: all 0.5s ease;
+}
+
+.map-container:hover {
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}   
         :root {
             --primary: #3b82f6;
             --secondary: #8b5cf6;
