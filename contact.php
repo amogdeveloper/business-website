@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 session_start(); // Add this at the very top
 include('./components/header.php');
@@ -112,11 +113,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+=======
+>>>>>>> 7e98c5e22b1f7924ae805eba6a6aef9322144844
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Contact Us - Ocentra Technologies</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -735,5 +739,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             });
         });
     </script>
+=======
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Us Page</h1>
+>>>>>>> 7e98c5e22b1f7924ae805eba6a6aef9322144844
 </body>
 </html>

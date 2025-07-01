@@ -374,10 +374,10 @@
         <!-- Image Slider -->
         <div class="slider-container h-[80%]">
             <!-- Replace these with your actual images -->
-            <img src="h1.webp" alt="Slide 1" class="slider-image active">
-            <img src="h2.webp" alt="Slide 2" class="slider-image">
-            <img src="h3.webp" alt="Slide 3" class="slider-image">
-            <img src="h1.webp" alt="Slide 4" class="slider-image">
+            <img src="./images/h1.webp" alt="Slide 1" class="slider-image active">
+            <img src="./images/h2.webp" alt="Slide 2" class="slider-image">
+            <img src="./images/h3.webp" alt="Slide 3" class="slider-image">
+            <img src="./images/h1.webp" alt="Slide 4" class="slider-image">
             
             <!-- Overlay for better text readability -->
             <div class="absolute inset-0 bg-black/20 z-2"></div>
