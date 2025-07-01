@@ -30,12 +30,12 @@
             background: radial-gradient(circle at center, rgba(59, 130, 246, 0.2) 0%, rgba(17, 24, 39, 0) 70%);
         }
         
-        .gradient-text {
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
+     .gradient-text {
+      background: linear-gradient(90deg, #38bdf8,rgba(126, 10, 101, 0.47));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
         
         .section-card {
             background: rgba(30, 41, 59, 0.7);
@@ -80,7 +80,13 @@
         .floating {
             animation: floating 6s ease-in-out infinite;
         }
-        
+            .logo-bg-section {
+      background: linear-gradient(135deg, rgba(37, 187, 252, 0.404) 0%, rgba(76, 145, 243, 0.404) 100%);
+      width: 90%;
+      margin: 0 auto;
+      border-left: 4px solid #38bdf8;
+      border-right: 4px solid #94a3b8;
+    }
         @keyframes floating {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
@@ -297,6 +303,7 @@
     </style>
 </head>
 <body class="min-h-screen">
+  <?php include ('./components/header.php')?>
     <!-- Particles Background -->
     <div id="particles" class="fixed inset-0 z-0"></div>
     
@@ -508,15 +515,15 @@
             </div>
         </section>
     </div>
-  <section class="px-4 sm:px-6 py-12 sm:py-20 mb-12 sm:mb-20 text-center ">
+  <section class="px-4 sm:px-6 py-2  mb-12 sm:mb-20 text-center ">
       <div class="container mx-auto">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#2253f5]">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold gradient-text">
           Our Team
         </h2>
         <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white mt-2 mb-6 sm:mb-10">
           Meet Our Team
-        </p>
-
+          
+        </p >
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
           <!-- Team Member 1 -->
           <div class="relative bg-white rounded-2xl shadow-md transition-all duration-100 hover-card">
@@ -641,7 +648,7 @@
       </div>
     </div>
     <!-- Call to Action -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="py-20 relative overflow-hidden logo-bg-section ">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 z-0"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
@@ -656,7 +663,7 @@
         </div>
     </section>
 
-
+ <?php include ('./components/footer.php')?>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize GSAP and ScrollTrigger

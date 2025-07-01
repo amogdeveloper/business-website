@@ -1,3 +1,4 @@
+<?php include("background.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -261,100 +262,113 @@
       background-clip: text;
       color: transparent;
     }
+
+  
+        
+        body {
+            background: linear-gradient(135deg,rgba(5, 7, 14, 0.81) 0%, #121924 100%);
+            color: #f1f5f9;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+      
+        .content {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, #38bdf8, rgba(126, 10, 101, 0.47));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            color: white;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0 0.5rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #3b82f6;
+        }
+        
+        /* Particles container */
+        #particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+        
+        .instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            padding: 0 2rem;
+        }
+        
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            font-family: monospace;
+            font-size: 0.9rem;
+            max-height: 200px;
+            overflow: auto;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
-     <header class="header-glass fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="logo-container flex items-center">
-                    <!-- Replace with your actual logo -->
-                    <div class="flex items-center">
-                     <img src="ocentra.webp" alt="">
-                         
-                        <span class="ml-3 text-xl font-bold bg-gradient-to-r from-sky-400 to-gray-400 bg-clip-text text-transparent">Ocentra </span>
-                    </div>
-                </div>
-
-                <!-- Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="nav-link  hover:text-white transition">Home</a>
-                    <div class="relative group">
-                        <a href="#" class="nav-link  hover:text-white transition flex items-center">
-                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </a>
-                        <div class="absolute left-0 mt-2 w-48 bg-gray-800/90 backdrop-blur-md rounded-md shadow-lg py-2 z-50 hidden group-hover:block border border-white/50">
-                            <a href="#" class="block px-4 py-2  hover:bg-white/50 hover:text-white">Web Development</a>
-                            <a href="#" class="block px-4 py-2  hover:bg-white/50 hover:text-white">SEO Services</a>
-                            <a href="#" class="block px-4 py-2  hover:bg-white/50 hover:text-white">Digital Marketing</a>
-                            <a href="#" class="block px-4 py-2  hover:bg-white/50 hover:text-white">Graphic Design</a>
-                        </div>
-                    </div>
-                    <a href="#" class="nav-link  hover:text-white transition">Portfolio</a>
-                    <a href="#" class="nav-link  hover:text-white transition">Blog</a>
-                    <a href="#" class="nav-link  hover:text-white transition">About</a>
-                    <a href="#" class="nav-link  hover:text-white transition">Contact</a>
-                </nav>
-
-                <!-- Social Icons and Mobile Menu -->
-                <div class="flex items-center space-x-6">
-                    <div class="hidden md:flex space-x-4">
-                        <a href="#" class="social-icon  hover:text-sky-400">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon  hover:text-sky-400">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon  hover:text-sky-400">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon  hover:text-sky-400">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <button class="md:hidden  focus:outline-none" id="mobile-menu-button">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800" id="mobile-menu">
-            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                <a href="#" class=" hover:text-white">Home</a>
-                <div class="relative">
-                    <a href="#" class=" hover:text-white flex items-center justify-between">
-                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                    </a>
-                        <a href="#" class="block py-2  hover:text-white">Web Development</a>
-                        <a href="#" class="block py-2  hover:text-white">SEO Services</a>
-                        <a href="#" class="block py-2  hover:text-white">Digital Marketing</a>
-                        <a href="#" class="block py-2  hover:text-white">Graphic Design</a>
-                </div>
-                <a href="#" class=" hover:text-white">Portfolio</a>
-                <a href="#" class=" hover:text-white">Blog</a>
-                <a href="#" class=" hover:text-white">About</a>
-                <a href="#" class=" hover:text-white">Contact</a>
-                <div class="flex space-x-6 pt-4">
-                    <a href="#" class="social-icon  hover:text-sky-400">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon  hover:text-sky-400">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon  hover:text-sky-400">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-icon  hover:text-sky-400">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    
+<?php include ('./components/header.php')?>
+        <div id="particles" class="fixed inset-0 z-0"></div>
     <!-- Hero Section -->
     <section class="hero-section">
         <!-- Image Slider -->
@@ -956,110 +970,11 @@
       </div>
     </div>
   </section>
-  <footer class="footer-gradient pt-16 pb-8 px-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-        
-        <!-- Company Info -->
-        <div>
-          <div class="flex items-center mb-4">
-            <!-- Your Logo Here - Replace with your actual logo -->
-           <img src="ocentra.webp" alt="">
-            <span class="text-2xl font-bold logo-text">ocentra</span>
-          </div>
-          <p class="text-white mb-4">
-            Creating digital experiences that drive results and elevate your brand.
-          </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-white hover:text-sky-400 transition"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white hover:text-sky-400 transition"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white hover:text-sky-400 transition"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="text-white hover:text-sky-400 transition"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul class="space-y-3">
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Home
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> About Us
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Services
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Portfolio
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Contact
-            </a></li>
-          </ul>
-        </div>
-
-        <!-- Services -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
-          <ul class="space-y-3">
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Web Development
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> SEO Services
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Digital Marketing
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> Graphic Design
-            </a></li>
-            <li><a href="#" class="text-white footer-link transition flex items-center">
-              <i class="fas fa-chevron-right text-xs mr-2 text-sky-400"></i> UI/UX Design
-            </a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
-          <ul class="space-y-4 text-white">
-            <li class="flex items-start">
-              <i class="fas fa-map-marker-alt text-sky-400 mt-1 mr-3"></i>
-              <span>123 Business Ave, City, Country</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-phone-alt text-sky-400 mr-3"></i>
-              <span>+1 (123) 456-7890</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-envelope text-sky-400 mr-3"></i>
-              <span>info@yourbrand.com</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-clock text-sky-400 mr-3"></i>
-              <span>Mon-Fri: 9AM - 6PM</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="pt-8 mt-8 border-t border-gray-800 text-center text-white text-sm">
-        <p>© 2025 ocentratechnologies. All rights reserved.</p>
-        <div class="mt-2 flex justify-center space-x-6">
-          <a href="#" class="hover:text-sky-400">Privacy Policy</a>
-          <a href="#" class="hover:text-sky-400">Terms of Service</a>
-          <a href="#" class="hover:text-sky-400">Sitemap</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include ('./components/footer.php') ?>
 <!-- our it servcies gsap js code -->
   
     <script>
+      
         // Image Slider Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const images = document.querySelectorAll('.slider-image');
@@ -1128,6 +1043,58 @@
 
             // Start the slider
             startSlider();
+        });
+    </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create particles
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 100;
+            
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size, position and color
+                const size = Math.random() * 5 + 2;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const hue = 200 + Math.random() * 60;
+                const opacity = Math.random() * 0.5 + 0.1;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.background = `rgba(59, 130, 246, ${opacity})`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+                
+                // Animate particles
+                gsap.to(particle, {
+                    x: Math.random() * 100 - 50,
+                    y: Math.random() * 100 - 50,
+                    duration: Math.random() * 20 + 10,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut"
+                });
+                
+                return particle;
+            }
+            
+            // Create initial particles
+            for (let i = 0; i < particleCount; i++) {
+                createParticle();
+            }
+            
+            // Add more particles on click
+            document.addEventListener('click', function() {
+                for (let i = 0; i < 5; i++) {
+                    createParticle();
+                }
+            });
         });
     </script>
      <script>
