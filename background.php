@@ -103,7 +103,7 @@
         }
     </style>
 </head>
-<body>
+<body class=" ">
     <!-- Particles Background -->
     <div id="particles"></div>
     

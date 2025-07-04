@@ -269,12 +269,11 @@
                     Main Pages
                 </h2>
                 <ul class="sitemap-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i> About Us</a></li>
-                    <li><a href="#"><i class="fas fa-briefcase"></i> Services</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Products</a></li>
-                    <li><a href="#"><i class="fas fa-newspaper"></i> Blog</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.php"><i class="fas fa-user"></i> About Us</a></li>
+                    <li><a href="portfolio.php"><i class="fas fa-shopping-cart"></i> Portfolio</a></li>
+                    <li><a href="blog.php"><i class="fas fa-newspaper"></i> Blog</a></li>
+                    <li><a href="contact.php"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
             
@@ -285,22 +284,17 @@
                     Products
                 </h2>
                 <ul class="sitemap-links">
-                    <li><a href="#"><i class="fas fa-laptop"></i> Software Solutions</a></li>
-                    <li><a href="#"><i class="fas fa-mobile-alt"></i> Mobile Apps</a>
+                    <li><a href="website.php"><i class="fas fa-laptop"></i> Website Development</a></li>
+                    <li><a href="seo.php"><i class="fas fa-mobile-alt"></i>SEO</a>
                         <ul>
-                            <li class="sub-link"><a href="#">iOS Applications</a></li>
-                            <li class="sub-link"><a href="#">Android Applications</a></li>
-                            <li class="sub-link"><a href="#">Cross-Platform Apps</a></li>
+                            <li class="sub-link"><a href="digital.php">Digital Marketing</a></li>
+                            <li class="sub-link"><a href="design.php">Graphic Designing</a></li>
+                    <li><a href="digital.php"><i class="fas fa-bullhorn"></i> Social Media Handeling</a>
+                    <li><a href="website.php">Wordpress Website </a>
+
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fas fa-cloud"></i> Cloud Services</a>
-                        <ul>
-                            <li class="sub-link"><a href="#">Cloud Hosting</a></li>
-                            <li class="sub-link"><a href="#">Cloud Storage</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fas fa-shield-alt"></i> Security Products</a></li>
-                    <li><a href="#"><i class="fas fa-cogs"></i> Enterprise Solutions</a></li>
+            
                 </ul>
             </div>
             
@@ -313,38 +307,20 @@
                 <ul class="sitemap-links">
                     <li><a href="#"><i class="fas fa-code"></i> Web Development</a>
                         <ul>
-                            <li class="sub-link"><a href="#">Frontend Development</a></li>
-                            <li class="sub-link"><a href="#">Backend Development</a></li>
-                            <li class="sub-link"><a href="#">E-commerce Solutions</a></li>
+                            <li class="sub-link"><a href="website.php">Frontend Development</a></li>
+                            <li class="sub-link"><a href="website.php">Backend Development</a></li>
+                            <li class="sub-link"><a href="website.php">E-commerce Solutions</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fas fa-paint-brush"></i> UI/UX Design</a></li>
-                    <li><a href="#"><i class="fas fa-search"></i> SEO Optimization</a></li>
-                    <li><a href="#"><i class="fas fa-bullhorn"></i> Digital Marketing</a>
-                        <ul>
-                            <li class="sub-link"><a href="#">Social Media Marketing</a></li>
-                            <li class="sub-link"><a href="#">Content Marketing</a></li>
-                            <li class="sub-link"><a href="#">Email Marketing</a></li>
-                        </ul>
+                    <li><a href="graphic.php"><i class="fas fa-paint-brush"></i> UI/UX Design</a></li>
+                    <li><a href="seo.php"><i class="fas fa-search"></i> SEO Optimization</a></li>
+                    <li><a href="digital.php"><i class="fas fa-bullhorn"></i> Digital Marketing</a>
+                      
                     </li>
                 </ul>
             </div>
             
-            <!-- Resources Section -->
-            <div class="sitemap-section">
-                <h2 class="section-title">
-                    <i class="fas fa-book"></i>
-                    Resources
-                </h2>
-                <ul class="sitemap-links">
-                    <li><a href="#"><i class="fas fa-file-alt"></i> Documentation</a></li>
-                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Tutorials</a></li>
-                    <li><a href="#"><i class="fas fa-video"></i> Video Guides</a></li>
-                    <li><a href="#"><i class="fas fa-file-download"></i> Downloads</a></li>
-                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                    <li><a href="#"><i class="fas fa-comments"></i> Community Forum</a></li>
-                </ul>
-            </div>
+          
             
             <!-- Legal Section -->
             <div class="sitemap-section">
@@ -353,10 +329,9 @@
                     Legal
                 </h2>
                 <ul class="sitemap-links">
-                    <li><a href="#"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
-                    <li><a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
-                    <li><a href="#"><i class="fas fa-cookie-bite"></i> Cookie Policy</a></li>
-                    <li><a href="#"><i class="fas fa-gavel"></i> Compliance</a></li>
+                    <li><a href="privacy.php"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+                    <li><a href="term.php"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                    <li><a href="sitemap.php"><i class="fas fa-cookie-bite"></i> Sitemap</a></li>
                 </ul>
             </div>
             
@@ -367,35 +342,28 @@
                     Support
                 </h2>
                 <ul class="sitemap-links">
-                    <li><a href="#"><i class="fas fa-life-ring"></i> Help Center</a></li>
-                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Submit a Ticket</a></li>
-                    <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Support</a></li>
-                    <li><a href="#"><i class="fas fa-bug"></i> Report a Bug</a></li>
-                    <li><a href="#"><i class="fas fa-lightbulb"></i> Feature Requests</a></li>
+                    <li>
+    <a href="tel:+923001234567" class="flex items-center gap-2 hover:text-sky-400 transition">
+      <i class="fas fa-phone-alt"></i> +92 300 1234567
+    </a>
+  </li>
+  <li>
+    <a href="mailto:info@ocentratechnologies.com" class="flex items-center gap-2 hover:text-sky-400 transition">
+      <i class="fas fa-envelope"></i> info@ocentratechnologies.com
+    </a>
+  </li>
+                    <li><a href="https://www.linkedin.com/company/107666400/admin/dashboard/"><i class="fas fa-lightbulb"></i> linkedin</a></li>
+                    <li><a href="https://www.facebook.com/OcentraTechnologies"><i class="fas fa-lightbulb"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ocentra_technologies/?hl=en"><i class="fas fa-lightbulb"></i> Instagram</a></li>
+
                 </ul>
             </div>
+  
         </div>
-        
-        <div class="site-stats">
-            <div class="stat-card">
-                <div class="stat-number">85+</div>
-                <div class="stat-label">Total Pages</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">12</div>
-                <div class="stat-label">Categories</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">6</div>
-                <div class="stat-label">Main Sections</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">2024</div>
-                <div class="stat-label">Last Updated</div>
-            </div>
-        </div>
+  
     </div>
-    
+ 
+
     <script>
         // Simple search functionality
         document.querySelector('.search-box input').addEventListener('input', function(e) {

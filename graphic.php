@@ -254,7 +254,7 @@
 <body class="min-h-screen">
     <?php include("./components/header.php")?>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-screen mt-9 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-20 left-10 w-60 h-60 bg-purple-600 rounded-full filter blur-[100px] opacity-20"></div>
             <div class="absolute bottom-10 right-10 w-80 h-80 bg-indigo-600 rounded-full filter blur-[120px] opacity-20"></div>
@@ -274,12 +274,12 @@
                         Professional graphic design solutions that elevate your brand, engage your audience, and drive results. We turn ideas into visual masterpieces.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 btn-glow">
-                            Explore Services
+                     <div class="flex flex-wrap gap-4">
+                        <a href="about.php" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                          More know
                         </a>
-                        <a href="#portfolio" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
-                            View Portfolio
+                        <a href="contact.php" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                            Get a Quote
                         </a>
                     </div>
                     
@@ -369,9 +369,11 @@
                             Brand Strategy Development
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
+                <a href="contact.php">
+                        <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
                         Learn More
                     </button>
+                </a>
                 </div>
                 
                 <!-- Service 2 -->
@@ -402,7 +404,7 @@
                         </li>
                     </ul>
                     <button class="w-full py-3 bg-purple-500/20 text-purple-400 rounded-lg font-medium mt-4 hover:bg-purple-500/30 transition">
-                        Learn More
+                        Apply Now
                     </button>
                 </div>
                 
@@ -433,9 +435,11 @@
                             Design Systems
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
+                        Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 4 -->
@@ -465,9 +469,11 @@
                             Icon Sets
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-cyan-500/20 text-cyan-400 rounded-lg font-medium mt-4 hover:bg-cyan-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-cyan-500/20 text-cyan-400 rounded-lg font-medium mt-4 hover:bg-cyan-500/30 transition">
+                     Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 5 -->
@@ -497,9 +503,11 @@
                             Presentation Design
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-amber-500/20 text-amber-400 rounded-lg font-medium mt-4 hover:bg-amber-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-amber-500/20 text-amber-400 rounded-lg font-medium mt-4 hover:bg-amber-500/30 transition">
+                       Apply Now
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Service 6 -->
@@ -529,9 +537,11 @@
                             Packaging & Labeling
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-rose-500/20 text-rose-400 rounded-lg font-medium mt-4 hover:bg-rose-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-rose-500/20 text-rose-400 rounded-lg font-medium mt-4 hover:bg-rose-500/30 transition">
+                       Apply Now
                     </button>
+                   </a>
                 </div>
             </div>
         </div>
@@ -678,8 +688,7 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-indigo-500 to-purple-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">NEXUS</div>
-                            <div class="text-lg">Technology Brand Identity</div>
+                            <img src="./images/logo1 (1).png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-overlay">
@@ -697,13 +706,12 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-pink-500 to-rose-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">BLOOM</div>
-                            <div class="text-lg">Cosmetics Packaging</div>
+                                                <img src="./images/logo2.png" alt="">
+
                         </div>
                     </div>
                     <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold mb-2">BLOOM Cosmetics</h3>
-                        <p class="text-slate-300 mb-4">Eco-friendly packaging design for skincare line</p>
+                        <h3 class="text-xl font-bold mb-2">CapitalOven</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full text-sm">Packaging</span>
                             <span class="bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full text-sm">Label Design</span>
@@ -716,8 +724,7 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-cyan-500 to-blue-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">FINOVA</div>
-                            <div class="text-lg">Financial App UI/UX</div>
+                           <img src="./images/logo1 (2).png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-overlay">
@@ -735,12 +742,11 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-amber-500 to-orange-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">URBAN</div>
-                            <div class="text-lg">Fashion Brand Identity</div>
+                            <img src="./images/logo1 (3).png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold mb-2">URBAN Streetwear</h3>
+                        <h3 class="text-xl font-bold mb-2">UP GROUP</h3>
                         <p class="text-slate-300 mb-4">Brand identity for contemporary fashion label</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full text-sm">Branding</span>
@@ -754,12 +760,11 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-green-500 to-emerald-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">ORGANIC</div>
-                            <div class="text-lg">Food Packaging Design</div>
+                              <img src="./images/logo1 (4).png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold mb-2">ORGANIC Food Co.</h3>
+                        <h3 class="text-xl font-bold mb-2">pierre.</h3>
                         <p class="text-slate-300 mb-4">Sustainable packaging for organic food products</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Packaging</span>
@@ -773,12 +778,11 @@
                 <div class="portfolio-item animate-in">
                     <div class="bg-gradient-to-br from-rose-500 to-pink-600 h-80 rounded-lg flex items-center justify-center">
                         <div class="text-center p-8">
-                            <div class="text-5xl font-bold mb-2">CAFÉ</div>
-                            <div class="text-lg">Restaurant Branding</div>
+                             <img src="./images/logo1.png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold mb-2">Artisan Café</h3>
+                        <h3 class="text-xl font-bold mb-2">Erobic</h3>
                         <p class="text-slate-300 mb-4">Complete branding for specialty coffee shop</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-rose-500/20 text-rose-300 px-3 py-1 rounded-full text-sm">Brand Identity</span>

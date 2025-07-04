@@ -187,7 +187,7 @@
     <!-- Navigation -->
 <?php include ('./components/header.php') ?>
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center overflow-hidden hero-bg">
+    <section class=" mt-9 min-h-screen flex items-center justify-center overflow-hidden hero-bg">
         <div class="container mx-auto px-4 py-16 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
@@ -202,10 +202,10 @@
                     </p>
                     
                     <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                            Explore Services
+                        <a href="about.php" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                          More know
                         </a>
-                        <a href="#contact" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                        <a href="contact.php" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
                             Get a Quote
                         </a>
                     </div>
@@ -296,9 +296,11 @@
                             Performance optimization
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg font-medium">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg font-medium">
+                        Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 2 -->
@@ -328,9 +330,11 @@
                             Order tracking
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg font-medium">
-                        Learn More
+                  <a href="contact.php">
+                      <button class="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg font-medium">
+                      Apply Now
                     </button>
+                  </a>
                 </div>
                 
                 <!-- Service 3 -->
@@ -360,9 +364,11 @@
                             Cross-platform
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-cyan-600 to-cyan-800 rounded-lg font-medium">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-cyan-600 to-cyan-800 rounded-lg font-medium">
+                      Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 4 -->
@@ -392,9 +398,11 @@
                             Webhooks
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-amber-600 to-amber-800 rounded-lg font-medium">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-amber-600 to-amber-800 rounded-lg font-medium">
+                       Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 5 -->
@@ -424,9 +432,11 @@
                             24/7 support
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-pink-600 to-pink-800 rounded-lg font-medium">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-pink-600 to-pink-800 rounded-lg font-medium">
+                        Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 6 -->
@@ -456,9 +466,11 @@
                             Performance improvements
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-green-600 to-green-800 rounded-lg font-medium">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-green-600 to-green-800 rounded-lg font-medium">
+                     Apply Now
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -514,11 +526,7 @@
                 </div>
             </div>
             
-            <div class="mt-16 text-center">
-                <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                    Start Your Project
-                </a>
-            </div>
+           
         </div>
     </section>
 
@@ -546,8 +554,8 @@
                         </p>
                         <div class="flex justify-between items-center">
                             <div class="text-sm text-slate-400">React, Node.js, Stripe</div>
-                            <a href="#" class="text-blue-400 hover:text-blue-300">
-                                View Project <i class="fas fa-arrow-right ml-1"></i>
+                            <a href="portfolio.php" class="text-blue-400 hover:text-blue-300">
+                                View Porject <i class="fas fa-arrow-right ml-1"></i>
                             </a>
                         </div>
                     </div>
@@ -564,7 +572,7 @@
                         </p>
                         <div class="flex justify-between items-center">
                             <div class="text-sm text-slate-400">Vue.js, D3.js, Firebase</div>
-                            <a href="#" class="text-purple-400 hover:text-purple-300">
+                            <a href="portfolio.php" class="text-purple-400 hover:text-purple-300">
                                 View Project <i class="fas fa-arrow-right ml-1"></i>
                             </a>
                         </div>
@@ -582,7 +590,7 @@
                         </p>
                         <div class="flex justify-between items-center">
                             <div class="text-sm text-slate-400">Angular, Node.js, WebRTC</div>
-                            <a href="#" class="text-green-400 hover:text-green-300">
+                            <a href="portfolio.ph-p" class="text-green-400 hover:text-green-300">
                                 View Project <i class="fas fa-arrow-right ml-1"></i>
                             </a>
                         </div>
@@ -591,7 +599,7 @@
             </div>
             
             <div class="mt-12 text-center">
-                <a href="#" class="inline-block px-6 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition-all">
+                <a href="portfolio.php" class="inline-block px-6 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition-all">
                     View All Projects
                 </a>
             </div>
@@ -607,7 +615,7 @@
                 <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
                     Let's discuss how we can create a custom web solution for your business
                 </p>
-                <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 pulse">
+                <a href="contact.php" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 pulse">
                     Get a Free Consultation
                 </a>
             </div>

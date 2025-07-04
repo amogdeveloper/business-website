@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php 
 session_start(); // Add this at the very top
 include('./components/header.php');
@@ -113,14 +113,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-=======
->>>>>>> 7e98c5e22b1f7924ae805eba6a6aef9322144844
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
     <title>Contact Us - Ocentra Technologies</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -464,11 +463,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <select name="service" id="service" required
             class="w-full text-black px-4 py-3 rounded-lg border border-gray-300 bg-white focus:ring-2 focus:ring-blue-400 focus:outline-none transition">
             <option value="" disabled selected>Select a Service</option>
-            <option value="Renewable Services (Electrical Engineering)" <?= (isset($service) && $service === 'Renewable Services (Electrical Engineering)') ? 'selected' : '' ?>>Renewable Services (Electrical Engineering)</option>
-            <option value="Travel and Study Visa" <?= (isset($service) && $service === 'Travel and Study Visa') ? 'selected' : '' ?>>Travel and Study Visa</option>
+            <option value="Renewable Services (Electrical Engineering)" <?= (isset($service) && $service === 'Renewable Services (Electrical Engineering)') ? 'selected' : '' ?>>Website Development</option>
+            <option value="Travel and Study Visa" <?= (isset($service) && $service === 'Travel and Study Visa') ? 'selected' : '' ?>>SEO Services</option>
             <option value="IT Solutions" <?= (isset($service) && $service === 'IT Solutions') ? 'selected' : '' ?>>IT Solutions</option>
-            <option value="Professional Trainings" <?= (isset($service) && $service === 'Professional Trainings') ? 'selected' : '' ?>>Professional Trainings</option>
-            <option value="Abdullah Traders" <?= (isset($service) && $service === 'Abdullah Traders') ? 'selected' : '' ?>>Abdullah Traders</option>
+            <option value="Professional Trainings" <?= (isset($service) && $service === 'Professional Trainings') ? 'selected' : '' ?>>Digital Marketing</option>
+            <option value="Abdullah Traders" <?= (isset($service) && $service === 'Abdullah Traders') ? 'selected' : '' ?>>Graphic Designing</option>
           </select>
         </div>
 
@@ -587,67 +586,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 py-12 relative z-10">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <h2 class="text-2xl font-bold gradient-text mb-4">Ocentra Technologies</h2>
-                    <p class="text-slate-400 mb-6">Innovating the future, today. We create cutting-edge technology solutions that transform businesses and empower people.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-slate-400 hover:text-white transition">
-                            <i class="fab fa-facebook text-xl"></i>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition">
-                            <i class="fab fa-github text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Services</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Projects</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Careers</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Contact</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
-                            <span class="text-slate-400">123 Tech Avenue, Silicon Valley, CA</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone text-purple-400 mt-1 mr-3"></i>
-                            <span class="text-slate-400">+1 (555) 123-4567</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope text-cyan-400 mt-1 mr-3"></i>
-                            <span class="text-slate-400">info@ocentra.tech</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500">
-                <p>© 2023 Ocentra Technologies. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+  <?php include ("./components/footer.php")?>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -739,11 +678,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             });
         });
     </script>
-=======
-    <title>Document</title>
-</head>
-<body>
-    <h1>Contact Us Page</h1>
->>>>>>> 7e98c5e22b1f7924ae805eba6a6aef9322144844
-</body>
+
 </html>

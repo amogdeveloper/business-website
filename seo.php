@@ -103,7 +103,6 @@
         }
         
         .animate-in {
-            opacity: 0;
             transform: translateY(30px);
         }
         
@@ -296,7 +295,7 @@
 <body class="min-h-screen">
     <!-- Hero Section -->
      <?php include ('./components/header.php') ?>
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section class=" mt-9 relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-20 left-10 w-60 h-60 bg-purple-600 rounded-full filter blur-[100px] opacity-20"></div>
             <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-600 rounded-full filter blur-[120px] opacity-20"></div>
@@ -316,12 +315,12 @@
                         Transform your online presence with our data-driven SEO strategies. We help businesses dominate search rankings and attract high-quality traffic that converts.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 btn-glow">
-                            Explore Our Services
+                     <div class="flex flex-wrap gap-4">
+                        <a href="about.php" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                          More know
                         </a>
-                        <a href="#testimonials" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
-                            See Success Stories
+                        <a href="contact.php" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                            Get a Quote
                         </a>
                     </div>
                     
@@ -402,9 +401,10 @@
                             Core Web Vitals optimization
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium mt-4 hover:bg-blue-500/30 transition">
-                        Learn More
-                    </button>
+                    <a href="contact.php"> <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium mt-4 hover:bg-blue-500/30 transition">
+                      Apply Now
+                    </button></a>
+                   
                 </div>
                 
                 <!-- Service 2 -->
@@ -435,9 +435,11 @@
                             Content gap analysis
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-purple-500/20 text-purple-400 rounded-lg font-medium mt-4 hover:bg-purple-500/30 transition">
-                        Learn More
+                  <a href=" contact.php">
+                      <button class="w-full py-3 bg-purple-500/20 text-purple-400 rounded-lg font-medium mt-4 hover:bg-purple-500/30 transition">
+                     Apply Now
                     </button>
+                  </a>
                 </div>
                 
                 <!-- Service 3 -->
@@ -468,9 +470,11 @@
                             Link profile monitoring
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-green-500/20 text-green-400 rounded-lg font-medium mt-4 hover:bg-green-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                  <button class="w-full py-3 bg-green-500/20 text-green-400 rounded-lg font-medium mt-4 hover:bg-green-500/30 transition">
+                        |Apply Now
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Service 4 -->
@@ -501,9 +505,11 @@
                             Conversion rate optimization
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-amber-500/20 text-amber-400 rounded-lg font-medium mt-4 hover:bg-amber-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-amber-500/20 text-amber-400 rounded-lg font-medium mt-4 hover:bg-amber-500/30 transition">
+                    Apply Now
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Service 5 -->
@@ -534,9 +540,11 @@
                             Map pack domination
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-cyan-500/20 text-cyan-400 rounded-lg font-medium mt-4 hover:bg-cyan-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-cyan-500/20 text-cyan-400 rounded-lg font-medium mt-4 hover:bg-cyan-500/30 transition">
+                       Apply Now
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Service 6 -->
@@ -567,9 +575,11 @@
                             Monthly performance reports
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
-                        Learn More
+                <a href="contact.php">
+                        <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
+                        Apply Now
                     </button>
+                </a>
                 </div>
             </div>
         </div>
@@ -795,9 +805,11 @@
                         <li class="package-feature">Basic Link Building (5 links/month)</li>
                         <li class="package-feature">Monthly Performance Reports</li>
                     </ul>
-                    <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium hover:bg-blue-500/30 transition mt-auto">
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium hover:bg-blue-500/30 transition mt-auto">
                         Get Started
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Package 2 -->
@@ -816,9 +828,11 @@
                         <li class="package-feature">Competitor Analysis</li>
                         <li class="package-feature">Bi-weekly Performance Reports</li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-white rounded-lg font-bold hover:opacity-90 transition mt-auto">
+                  <a href="contact.php">
+                      <button class="w-full py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-white rounded-lg font-bold hover:opacity-90 transition mt-auto">
                         Choose Growth
                     </button>
+                  </a>
                 </div>
                 
                 <!-- Package 3 -->
@@ -839,9 +853,11 @@
                         <li class="package-feature">Weekly Performance Reports</li>
                         <li class="package-feature">Dedicated Account Manager</li>
                     </ul>
-                    <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium hover:bg-blue-500/30 transition mt-auto">
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-blue-500/20 text-blue-400 rounded-lg font-medium hover:bg-blue-500/30 transition mt-auto">
                         Contact Sales
                     </button>
+                    </a>
                 </div>
             </div>
             

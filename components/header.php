@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,35 +54,34 @@
 <body >
 
   <!-- Header Section -->
-  <header class="w-[95%] flex ml-6 mx-auto  mt-6 rounded-[50px] fixed top-0 z-50 bg-white/10 backdrop-blur-lg shadow-xl border border-white/50">
+  <header class="w-[95%] sm:ml-2  left-3 md:ml-6 mx-auto   mt-6 md:rounded-[200px] fixed top-0 z-50 bg-gray-900 backdrop-blur-lg shadow-xl border border-white/50">
     <div class="container mx-auto px-6 py-6">
       <div class="flex items-center justify-between">
 
         <!-- Logo -->
-        <div class="logo-container flex items-center">
-          <img src="ocentra.webp" alt="Logo" class="h-10 w-10 object-contain"/>
-          <span class="ml-3 text-xl font-bold bg-gradient-to-r from-sky-400 to-gray-400 bg-clip-text text-transparent">Ocentra</span>
+        <div class="">
+          <img src="./images/ocentr.png" alt="Logo" class=" bg-white rounded-2xl w-20 object-contain"/>
         </div>
 
         <!-- Navigation Links -->
         <nav class="hidden md:flex items-center space-x-8">
-          <a href="#" class="nav-link hover:text-white">Home</a>
+          <a href="/" class="nav-link hover:text-white">Home</a>
           <div class="relative group">
             <a href="#" class="nav-link hover:text-white flex items-center">Services
               <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
            <div class="absolute left-[-50px] mt-0 w-48 bg-gray-800/90 backdrop-blur-md rounded-md shadow-lg py-2 z-50 hidden group-hover:block border border-gray-700/50">
-  <a href="website" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Web Development</a>
-  <a href="seo" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">SEO Services</a>
-  <a href="digital" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Digital Marketing</a>
-  <a href="graphic" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Graphic Design</a>
+  <a href="website.php" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Web Development</a>
+  <a href="seo.php" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">SEO Services</a>
+  <a href="digital.php" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Digital Marketing</a>
+  <a href="graphic.php" class="block px-4 py-2 hover:bg-gray-700/50 hover:text-white">Graphic Design</a>
 </div>
 
           </div>
-          <a href="#" class="nav-link hover:text-white">Portfolio</a>
-          <a href="#" class="nav-link hover:text-white">Blog</a>
-          <a href="about-us" class="nav-link hover:text-white">About</a>
-          <a href="contact" class="nav-link hover:text-white">Contact</a>
+          <a href="portfolio.php" class="nav-link hover:text-white">Portfolio</a>
+          <a href="blog.php" class="nav-link hover:text-white">Blog</a>
+          <a href="about-us.php" class="nav-link hover:text-white">About</a>
+          <a href="contact.php" class="nav-link hover:text-white">Contact</a>
         </nav>
 
         <!-- Social Icons & Mobile Button -->
@@ -100,14 +100,18 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="md:hidden hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800" id="mobile-menu">
+    <div class="md:hidden hidden flex justify-center items-center bg-gray-900/95 backdrop-blur-md border-t border-gray-800" id="mobile-menu">
       <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-        <a href="#" class="hover:text-white">Home</a>
-        <a href="#" class="hover:text-white">Services</a>
-        <a href="#" class="hover:text-white">Portfolio</a>
-        <a href="#" class="hover:text-white">Blog</a>
-        <a href="#" class="hover:text-white">About</a>
-        <a href="#" class="hover:text-white">Contact</a>
+        <a href="/" class="hover:text-white">Home</a>
+        <a href="#" class="text-bold text-xl hover:text-white">Services</a>
+         <a href="website.php" class="block  py-2 hover:bg-gray-700/50 hover:text-white">Web Development</a>
+  <a href="seo.php" class="block  py-2 hover:bg-gray-700/50 hover:text-white">SEO Services</a>
+  <a href="digital.php" class="block  py-2 hover:bg-gray-700/50 hover:text-white">Digital Marketing</a>
+  <a href="graphic.php" class="block  py-2 hover:bg-gray-700/50 hover:text-white">Graphic Design</a>
+        <a href="portfolio.php" class="hover:text-white">Portfolio</a>
+        <a href="blog.php" class="hover:text-white">Blog</a>
+        <a href="about.php" class="hover:text-white">About</a>
+        <a href="contact.php" class="hover:text-white">Contact</a>
         <div class="flex space-x-6 pt-4">
           <a href="#" class="social-icon hover:text-sky-400"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-icon hover:text-sky-400"><i class="fab fa-twitter"></i></a>

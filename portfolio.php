@@ -14,7 +14,7 @@
         :root {
             --primary-dark: #0f172a;
             --primary-light: #1e293b;
-            --gold-gradient: linear-gradient(90deg, #FFD700, #FFC300, #FFA500);
+            --gold-gradient: linear-gradient(90deg, #38bdf8, #818cf8);
             --blue-gradient: linear-gradient(90deg, #3b82f6, #60a5fa);
             --green-gradient: linear-gradient(90deg, #10b981, #34d399);
         }
@@ -232,13 +232,12 @@
                     We build custom software solutions that drive growth, enhance productivity, 
                     and transform businesses for the digital age.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <button class="gold-gradient-btn text-gray-900 px-8 py-3 rounded-md font-semibold text-lg">
-                        Explore Our Work
-                    </button>
-                    <button class="bg-transparent border-2 border-blue-500 text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-blue-500 transition">
+               
+               <a href="contact.php">
+                     <button class="bg-transparent border-2 border-blue-500 text-white px-9 py-3 rounded-md font-semibold text-lg hover:bg-blue-500 transition">
                         Contact Us
                     </button>
+               </a>
                 </div>
             </div>
         </div>
@@ -267,186 +266,102 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="section-title text-3xl font-bold inline-block">Our <span class="gold-gradient-text">Services</span></h2>
-                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
-                    We offer a comprehensive range of software development services to help your business thrive in the digital world.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-laptop-code text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Custom Software Development</h3>
-                    <p class="text-gray-400 mb-4">
-                        Tailor-made software solutions designed to address your unique business challenges and requirements.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Enterprise applications</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>CRM & ERP systems</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Workflow automation</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-mobile-alt text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Mobile App Development</h3>
-                    <p class="text-gray-400 mb-4">
-                        Engaging mobile applications for iOS and Android that deliver exceptional user experiences.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Native iOS & Android apps</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Cross-platform solutions</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Enterprise mobility</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-globe text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
-                    <p class="text-gray-400 mb-4">
-                        Responsive, high-performance websites and web applications that drive engagement and conversions.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>E-commerce solutions</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Progressive web apps</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>CMS development</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-cloud text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Cloud Solutions</h3>
-                    <p class="text-gray-400 mb-4">
-                        Scalable cloud infrastructure and services to optimize your operations and reduce costs.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>AWS, Azure & GCP</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Cloud migration</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Serverless architecture</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                
-                <!-- Service 5 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-brain text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">AI & Machine Learning</h3>
-                    <p class="text-gray-400 mb-4">
-                        Intelligent solutions that leverage AI and ML to automate processes and uncover valuable insights.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Predictive analytics</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Natural language processing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Computer vision</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                
-                <!-- Service 6 -->
-                <div class="service-card p-8 rounded-2xl">
-                    <div class="w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-2xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Cybersecurity</h3>
-                    <p class="text-gray-400 mb-4">
-                        Comprehensive security solutions to protect your digital assets and ensure compliance.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Vulnerability assessment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Penetration testing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span>Security compliance</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-            </div>
+     <section class="  px-6 py-10  max-w-7xl mx-auto" id="services">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Our <span id="services" class="gradient-text">IT Services</span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+       Innovative and scalable solutions designed to enhance your digital presence, streamline operations, and accelerate business growth.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <!-- Web Development -->
+      <div class="service-card rounded-xl p-6 group">
+        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-code text-3xl text-sky-400"></i>
         </div>
-    </section>
+        <h3 class="text-2xl font-bold mb-3">Web Development</h3>
+        <p class="text-gray-400 mb-9">
+       Custom, responsive websites built with modern frameworks to ensure speed, scalability, and seamless user experience.
+        </p>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> React/Next.js</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Node.js Backend</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> API Integration</li>
+        </ul>
+        <div class="mt-6 pt-4 border-t border-gray-800">
+          <a href="website.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- SEO Services -->
+      <div class="service-card rounded-xl p-6 group">
+        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-search-dollar text-3xl text-sky-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">SEO Services</h3>
+        <p class="text-gray-400 mb-9">
+         Improve your online visibility and rankings with our results-focused, data-driven SEO strategies.
+        </p>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Keyword Research</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> On-Page Optimization</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Technical SEO</li>
+        </ul>
+        <div class="mt-6 pt-4 border-t border-gray-800">
+          <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="service-card rounded-xl p-6 group">
+        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-bullseye text-3xl text-sky-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold ">Digital Marketing</h3>
+        <p class="text-gray-400 mb-9">
+        Targeted digital campaigns designed to drive traffic, increase conversions, and grow your brand online.
+        </p>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> PPC Advertising</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Social Media Marketing</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Conversion Optimization</li>
+        </ul>
+        <div class="mt-6 pt-4 border-t border-gray-800">
+          <a href="digital.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Graphic Design -->
+      <div class="service-card rounded-xl p-6 group">
+        <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-paint-brush text-3xl text-sky-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Graphic Design</h3>
+        <p class="text-gray-400 mb-9">
+          Visually striking designs that reflect your brand identity and enhance user engagement across all platforms.
+        </p>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Brand Identity</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> UI/UX Design</li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Marketing Materials</li>
+        </ul>
+        <div class="mt-6 pt-4 border-t border-gray-800">
+          <a href="graphic.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 px-6 bg-gray-800">
@@ -485,9 +400,9 @@
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">Node.js</span>
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">MongoDB</span>
                         </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        <!-- <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
                             View Case Study <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 
@@ -509,9 +424,9 @@
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">Firebase</span>
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">iOS/Android</span>
                         </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        <!-- <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
                             View Case Study <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 
@@ -533,17 +448,15 @@
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">Laravel</span>
                             <span class="text-xs bg-gray-700 px-3 py-1 rounded-full">MySQL</span>
                         </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        <!-- <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
                             View Case Study <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <button class="gold-gradient-btn text-gray-900 px-8 py-3 rounded-md font-semibold text-lg">
-                    View All Projects
-                </button>
+              
             </div>
         </div>
     </section>

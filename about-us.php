@@ -313,21 +313,21 @@
         
         <div class="container mx-auto px-4 py-16 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="OCENTRA">
-                    <span class="gradient-text">OCENTRA</span>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="About Us">
+                    <span class="gradient-text">About Us</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto">
                     We are redefining the future of technology with innovative solutions that transform businesses and empower people.
                 </p>
                 
                 <div class="flex flex-wrap justify-center gap-4">
-                    <button class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                        Explore Solutions
-                    </button>
-                    <button class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
-                        Meet Our Team
-                    </button>
-                </div>
+                        <a href="about.php" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                          More know
+                        </a>
+                        <a href="contact.php" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                            Get a Quote
+                        </a>
+                    </div>
             </div>
             
            
@@ -914,5 +914,6 @@
         });
       });
     </script>
+    
 </body>
 </html>

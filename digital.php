@@ -345,7 +345,7 @@
 <body class="min-h-screen">
     <?php include("./components/header.php")?>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-screen mt-9 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-20 left-10 w-60 h-60 bg-indigo-600 rounded-full filter blur-[100px] opacity-20"></div>
             <div class="absolute bottom-10 right-10 w-80 h-80 bg-pink-600 rounded-full filter blur-[120px] opacity-20"></div>
@@ -365,12 +365,12 @@
                         Accelerate your business growth with our data-driven digital marketing strategies. We help brands dominate their markets through integrated online marketing solutions.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="px-8 py-3 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 btn-glow">
-                            Explore Services
+                     <div class="flex flex-wrap gap-4">
+                        <a href="about.php" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                          More know
                         </a>
-                        <a href="#contact" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
-                            Get a Free Strategy Session
+                        <a href="contact.php" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                            Get a Quote
                         </a>
                     </div>
                     
@@ -476,9 +476,11 @@
                             Local SEO implementation
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
+                      Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 2 -->
@@ -508,9 +510,11 @@
                             Conversion rate optimization
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
+                        Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 3 -->
@@ -540,9 +544,11 @@
                             Performance analytics
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-teal-500/20 text-teal-400 rounded-lg font-medium mt-4 hover:bg-teal-500/30 transition">
-                        Learn More
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-teal-500/20 text-teal-400 rounded-lg font-medium mt-4 hover:bg-teal-500/30 transition">
+                       Apply Now
                     </button>
+                   </a>
                 </div>
                 
                 <!-- Service 4 -->
@@ -572,9 +578,11 @@
                             Performance optimization
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium mt-4 hover:bg-indigo-500/30 transition">
+                        Apply Now
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Service 5 -->
@@ -604,9 +612,11 @@
                             Content distribution
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
-                        Learn More
+                  <a href="contact.php">
+                      <button class="w-full py-3 bg-pink-500/20 text-pink-400 rounded-lg font-medium mt-4 hover:bg-pink-500/30 transition">
+                       Apply Now
                     </button>
+                  </a>
                 </div>
                 
                 <!-- Service 6 -->
@@ -636,9 +646,11 @@
                             Strategic recommendations
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-teal-500/20 text-teal-400 rounded-lg font-medium mt-4 hover:bg-teal-500/30 transition">
-                        Learn More
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-teal-500/20 text-teal-400 rounded-lg font-medium mt-4 hover:bg-teal-500/30 transition">
+                       Apply Now
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -833,9 +845,11 @@
                         <li class="package-feature">Monthly Performance Reports</li>
                         <li class="package-feature">Email Support</li>
                     </ul>
-                    <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium hover:bg-indigo-500/30 transition mt-auto">
+              <a href="contact.php">
+                      <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium hover:bg-indigo-500/30 transition mt-auto">
                         Get Started
                     </button>
+              </a>
                 </div>
                 
                 <!-- Package 2 -->
@@ -853,9 +867,11 @@
                         <li class="package-feature">Bi-weekly Performance Reports</li>
                         <li class="package-feature">Priority Support</li>
                     </ul>
-                    <button class="w-full py-3 bg-gradient-to-r from-pink-500 to-indigo-500 text-white rounded-lg font-bold hover:opacity-90 transition mt-auto">
+                    <a href="contact.php">
+                        <button class="w-full py-3 bg-gradient-to-r from-pink-500 to-indigo-500 text-white rounded-lg font-bold hover:opacity-90 transition mt-auto">
                         Choose Growth
                     </button>
+                    </a>
                 </div>
                 
                 <!-- Package 3 -->
@@ -874,9 +890,11 @@
                         <li class="package-feature">Weekly Strategy Sessions</li>
                         <li class="package-feature">Dedicated Account Manager</li>
                     </ul>
-                    <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium hover:bg-indigo-500/30 transition mt-auto">
+                   <a href="contact.php">
+                     <button class="w-full py-3 bg-indigo-500/20 text-indigo-400 rounded-lg font-medium hover:bg-indigo-500/30 transition mt-auto">
                         Contact Sales
                     </button>
+                   </a>
                 </div>
             </div>
             
@@ -989,9 +1007,11 @@
                 <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
                     Join hundreds of satisfied clients who have revolutionized their operations with our cutting-edge solutions.
                 </p>
-                <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 glow">
-                    Schedule a Demo
+               <a href="contact.php">
+                 <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 glow">
+                Apply Now
                 </button>
+               </a>
             </div>
         </div>
     </section>

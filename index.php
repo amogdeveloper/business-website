@@ -1,4 +1,3 @@
-<?php include("background.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,12 +71,7 @@
       box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
       border-color: rgba(56, 189, 248, 0.3);
     }
-    .gradient-text {
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    
     .pulse-animation {
       animation: pulse 3s infinite;
     }
@@ -139,7 +133,7 @@
       border-color: rgba(56, 189, 248, 0.3);
     }
     .gradient-text {
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      background: linear-gradient(90deg, #38bdf8,rgb(253, 253, 253));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -147,12 +141,7 @@
     .icon-box {
       background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
     }
-    .gradient-text {
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    
     .image-container {
       position: relative;
       overflow: hidden;
@@ -191,12 +180,7 @@
       box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
       border-color: rgba(56, 189, 248, 0.3);
     }
-    .gradient-text {
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+   
     .quote-icon {
       opacity: 0.1;
       font-size: 5rem;
@@ -362,64 +346,63 @@
             font-family: monospace;
             font-size: 0.9rem;
             max-height: 200px;
-            overflow: auto;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-100">
-<?php include ('./components/header.php')?>
+<body class="bg-gray-900 text-gray-100 overflow-x-hidden">
+  <?php include("./components/header.php")?>
         <div id="particles" class="fixed inset-0 z-0"></div>
     <!-- Hero Section -->
-    <section class="hero-section">
-        <!-- Image Slider -->
-        <div class="slider-container h-[80%]">
-            <!-- Replace these with your actual images -->
-            <img src="./images/h1.webp" alt="Slide 1" class="slider-image active">
-            <img src="./images/h2.webp" alt="Slide 2" class="slider-image">
-            <img src="./images/h3.webp" alt="Slide 3" class="slider-image">
-            <img src="./images/h1.webp" alt="Slide 4" class="slider-image">
-            
-            <!-- Overlay for better text readability -->
-            <div class="absolute inset-0 bg-black/20 z-2"></div>
-        </div>
+<section class="hero-section relative top-[-100px]">
+    <!-- Image Slider -->
+    <div class="slider-container h-[80%]">
+        <img src="./images/h1.webp" alt="Slide 1" class="slider-image active">
+        <img src="./images/h2.webp" alt="Slide 2" class="slider-image">
+        <img src="./images/h3.webp" alt="Slide 3" class="slider-image">
+        <img src="./images/h1.webp" alt="Slide 4" class="slider-image">
 
-        <!-- Hero Content -->
-        <div class="hero-content h-full flex flex-col items-center justify-center text-center px-6">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="ml-3 text-6xl font-bold text-white ">
-                    Transform Your Digital Presence
-                </h1>
-                <p class="text-xl md:text-2xl text-white mb-10 text-shadow animate-fade-in-delay">
-                    We create stunning websites, powerful SEO strategies, and captivating digital experiences that drive results and elevate your brand.
-                </p>
-                <div class="flex gap-4 justify-center animate-fade-in-delay-more">
-                    <a href="#" class="px-8 py-3 bg-sky-500 hover:bg-sky-600 rounded-full font-medium transition-all transform hover:scale-105">
-                        Get Started
-                    </a>
-                    <a href="#" class="px-8 py-3 bg-transparent border-2 border-white hover:bg-white/10 rounded-full font-medium transition-all transform hover:scale-105">
-                        Learn More
-                    </a>
-                </div>
+        <!-- Overlay -->
+        <div class="absolute h-[50%] inset-0 bg-black/80 z-2"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content flex flex-col items-center justify-center absolute inset-0 h-[80%] bg-black/70 backdrop-blur-sm text-center px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="ml-3 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight sm:leading-snug">
+               Elevate Your <span class="gradient-text">Digital Presence</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-8 sm:mb-10 text-shadow animate-fade-in-delay">
+               At Ocentra Technologies, we craft high-impact websites, implement data-driven SEO strategies, and build immersive digital experiences that boost visibility, engage users, and accelerate growth.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center animate-fade-in-delay-more">
+                <a href="contact.php" class="px-6 sm:px-8 py-2 sm:py-3 bg-sky-500 hover:bg-sky-600 rounded-full font-medium transition-all transform hover:scale-105 text-sm sm:text-base">
+                    Get Started
+                </a>
+                <a href="about.php" class="px-6 sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-white hover:bg-white hover:text-black rounded-full font-medium transition-all transform hover:scale-105 text-sm sm:text-base">
+                    Learn More
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-            <div class="slider-dot active" data-index="0"></div>
-            <div class="slider-dot" data-index="1"></div>
-            <div class="slider-dot" data-index="2"></div>
-            <div class="slider-dot" data-index="3"></div>
-        </div>
-    </section>
+    <!-- Slider Controls -->
+    <div class="slider-controls mb-[80px] sm:mb-[100px]">
+        <div class="slider-dot active" data-index="0"></div>
+        <div class="slider-dot" data-index="1"></div>
+        <div class="slider-dot" data-index="2"></div>
+        <div class="slider-dot" data-index="3"></div>
+    </div>
+</section>
+
 
     <!-- Spacer for content below hero -->
-   <section class="py-20 px-6 max-w-7xl mx-auto" id="services">
+   <section class="  px-6 relative top-[-120px]  max-w-7xl mx-auto" id="services">
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Our <span class="gradient-text">IT Services</span>
+        Our <span id="services" class="gradient-text">IT Services</span>
       </h2>
       <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-        Cutting-edge solutions to transform your digital presence and drive business growth.
+       Innovative and scalable solutions designed to enhance your digital presence, streamline operations, and accelerate business growth.
       </p>
     </div>
 
@@ -430,8 +413,8 @@
           <i class="fas fa-code text-3xl text-sky-400"></i>
         </div>
         <h3 class="text-2xl font-bold mb-3">Web Development</h3>
-        <p class="text-gray-400 mb-4">
-          Custom, responsive websites built with modern frameworks for optimal performance.
+        <p class="text-gray-400 mb-9">
+       Custom, responsive websites built with modern frameworks to ensure speed, scalability, and seamless user experience.
         </p>
         <ul class="space-y-2 text-sm text-gray-300">
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> React/Next.js</li>
@@ -439,7 +422,7 @@
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> API Integration</li>
         </ul>
         <div class="mt-6 pt-4 border-t border-gray-800">
-          <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+          <a href="website.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
             Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
@@ -451,8 +434,8 @@
           <i class="fas fa-search-dollar text-3xl text-sky-400"></i>
         </div>
         <h3 class="text-2xl font-bold mb-3">SEO Services</h3>
-        <p class="text-gray-400 mb-4">
-          Boost your search rankings with our data-driven SEO strategies.
+        <p class="text-gray-400 mb-9">
+         Improve your online visibility and rankings with our results-focused, data-driven SEO strategies.
         </p>
         <ul class="space-y-2 text-sm text-gray-300">
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Keyword Research</li>
@@ -471,9 +454,9 @@
         <div class="icon-box w-16 h-16 rounded-lg flex items-center justify-center mb-6">
           <i class="fas fa-bullseye text-3xl text-sky-400"></i>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Digital Marketing</h3>
-        <p class="text-gray-400 mb-4">
-          Targeted campaigns that convert visitors into customers.
+        <h3 class="text-2xl font-bold ">Digital Marketing</h3>
+        <p class="text-gray-400 mb-9">
+        Targeted digital campaigns designed to drive traffic, increase conversions, and grow your brand online.
         </p>
         <ul class="space-y-2 text-sm text-gray-300">
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> PPC Advertising</li>
@@ -481,7 +464,7 @@
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Conversion Optimization</li>
         </ul>
         <div class="mt-6 pt-4 border-t border-gray-800">
-          <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+          <a href="digital.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
             Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
@@ -493,8 +476,8 @@
           <i class="fas fa-paint-brush text-3xl text-sky-400"></i>
         </div>
         <h3 class="text-2xl font-bold mb-3">Graphic Design</h3>
-        <p class="text-gray-400 mb-4">
-          Visually stunning designs that communicate your brand identity.
+        <p class="text-gray-400 mb-9">
+          Visually striking designs that reflect your brand identity and enhance user engagement across all platforms.
         </p>
         <ul class="space-y-2 text-sm text-gray-300">
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Brand Identity</li>
@@ -502,7 +485,7 @@
           <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> Marketing Materials</li>
         </ul>
         <div class="mt-6 pt-4 border-t border-gray-800">
-          <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300">
+          <a href="graphic.php" class="inline-flex items-center text-sky-400 hover:text-sky-300">
             Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
@@ -511,8 +494,11 @@
   </section>
 
   <!-- Section 1: Left Content + Right Image -->
-  <section class="py-20 px-6 max-w-7xl mx-auto">
-    <div class="flex flex-col lg:flex-row items-center gap-12">
+  <section class=" overflow-x-hidden px-6 max-w-7xl mx-auto">
+     <h1 class="text-center text-white text-6xl mb-[100px]" > About Us</h1>
+     <p></p>
+    <div class="flex flex-col lg:flex-row  items-center gap-12">
+     
       <!-- Left Content -->
       <div class="lg:w-1/2">
         <span class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full mb-4 text-sm font-medium">ABOUT US</span>
@@ -520,8 +506,9 @@
           We Create <span class="gradient-text">Digital Experiences</span>
         </h2>
         <p class="text-lg text-white mb-8">
-          Our team of experts delivers innovative solutions that drive real business growth. With over 10 years of experience, we've helped hundreds of clients achieve their digital goals.
+          With over a decade of experience, our expert team delivers innovative, results-driven solutions that help businesses grow and thrive in the digital world. We’ve empowered hundreds of clients to reach their digital goals with confidence
         </p>
+        <h1 class="text-4xl text-bold mb-5 text-white">What Sets Us Apart:</h1>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <div class="bg-sky-100 p-2 rounded-lg mr-4">
@@ -529,7 +516,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="text-white">Custom solutions tailored to your business needs</span>
+            
+            <span class="text-white">Tailored solutions aligned with your business goals</span>
           </li>
           <li class="flex items-start">
             <div class="bg-sky-100 p-2 rounded-lg mr-4">
@@ -537,7 +525,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="text-white">Cutting-edge technology stack</span>
+            <span class="text-white">Modern, scalable technology stack</span>
           </li>
           <li class="flex items-start">
             <div class="bg-sky-100 p-2 rounded-lg mr-4">
@@ -545,43 +533,43 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="text-white">Dedicated support team</span>
+            <span class="text-white">Responsive and dedicated support team</span>
           </li>
         </ul>
-        <div class="flex gap-4">
-          <a href="#" class="px-6 py-3 bg-gradient-to-r from-sky-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all">
+        <div class="flex gap-4 mb-4">
+          <a href="contact.php" class="px-6 py-3 bg-gradient-to-r from-sky-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all">
             Get Started
           </a>
-          <a href="#" class="px-6 py-3 border border-gray-300 text-white rounded-lg font-medium hover:bg-gray-100 transition-all">
+          <a href="about.php" class="px-6 py-3 border border-gray-300 text-white rounded-lg font-medium hover:bg-gray-100 transition-all">
             Learn More
           </a>
         </div>
       </div>
       
       <!-- Right Image -->
-      <div class="lg:w-1/2 image-container shadow-xl">
-        <img src="h1.webp" 
+      <div class="mb-5 lg:w-1/2 image-container shadow-xl">
+        <img src="./images/t.webp" 
              alt="Team working on digital project" 
-             class="w-full h-auto rounded-lg">
+             class="w-full h-auto rounded-lg relative z-10 right-[80px]">
       </div>
     </div>
   </section>
 
   <!-- Section 2: Right Content + Left Image -->
-  <section class="py-20 px-6 max-w-7xl mx-auto bg-gray-100">
+  <section class="overflow-x-hidden py-20 px-6 max-w-7xl mx-auto bg-gray-100">
     <div class="flex flex-col lg:flex-row items-center gap-12">
       <!-- Left Image -->
-      <div class="lg:w-1/2 image-container shadow-xl lg:order-1">
+      <div class="lg:w-1/2 image-container shadow-xl  lg:order-1">
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
              alt="Happy team meeting" 
-             class="w-full h-auto rounded-lg">
+             class="w-full h-auto relative left-[50px] rounded-lg">
       </div>
       
       <!-- Right Content -->
       <div class="lg:w-1/2 lg:order-2">
         <span class="inline-block px-4 py-1 bg-indigo-100 text-indigo-600 rounded-full mb-4 text-sm font-medium">OUR PROCESS</span>
         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-          How We <span class="gradient-text">Work</span>
+          How We <span class="text-black">Work</span>
         </h2>
         <div class="space-y-6">
           <div class="flex gap-4">
@@ -590,7 +578,7 @@
             </div>
             <div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">Discovery</h3>
-              <p class="text-black">We analyze your business needs and goals to create a customized strategy.</p>
+              <p class="text-black">We assess your business objectives and challenges to craft a tailored digital strategy.</p>
             </div>
           </div>
           <div class="flex gap-4">
@@ -599,7 +587,7 @@
             </div>
             <div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">Design</h3>
-              <p class="text-black">Our designers create stunning interfaces focused on user experience.</p>
+              <p class="text-black">Our team designs intuitive, visually compelling interfaces with a focus on seamless user experience.</p>
             </div>
           </div>
           <div class="flex gap-4">
@@ -608,11 +596,11 @@
             </div>
             <div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">Development</h3>
-              <p class="text-black">We build robust solutions using modern technologies and best practices.</p>
+              <p class="text-black">We develop scalable, high-performance solutions using the latest technologies and industry best practices.</p>
             </div>
           </div>
         </div>
-        <a href="#" class="mt-8 inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800">
+        <a href="#services" class="mt-8 inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800">
           See full process <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
           </svg>
@@ -620,7 +608,7 @@
       </div>
     </div>
   </section>
-    <section class="py-20 px-6 max-w-7xl mx-auto relative overflow-hidden">
+  <section class="overflow-x-hidden py-20 px-6 max-w-7xl mx-auto relative overflow-hidden">
     <!-- Animated background elements -->
     <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-sky-900/20 blur-3xl"></div>
     <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-indigo-900/20 blur-3xl"></div>
@@ -632,7 +620,7 @@
           We Deliver <span class="gradient-text">Exceptional Value</span>
         </h2>
         <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-          Here's what sets us apart from the competition and makes us the ideal choice for your business.
+        Here’s what sets Ocentra Technologies apart — and why businesses trust us to bring their digital vision to life.
         </p>
       </div>
 
@@ -642,9 +630,9 @@
           <div class="w-14 h-14 rounded-lg bg-sky-900/30 flex items-center justify-center mb-6 text-sky-400 text-2xl">
             <i class="fas fa-medal"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Award-Winning Quality</h3>
+          <h3 class="text-2xl font-bold mb-3"> 🏆 Award-Winning Quality</h3>
           <p class="text-gray-400">
-            Recognized industry leaders with multiple awards for excellence in design and development.
+Recognised as industry leaders with multiple accolades for excellence in design and development.
           </p>
           <div class="mt-6 pt-6 border-t border-gray-800 flex items-center">
             <div class="counter-box rounded-lg w-16 h-16 flex items-center justify-center mr-4">
@@ -662,9 +650,9 @@
           <div class="w-14 h-14 rounded-lg bg-sky-900/30 flex items-center justify-center mb-6 text-sky-400 text-2xl">
             <i class="fas fa-users"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Client-Centric Approach</h3>
+          <h3 class="text-2xl font-bold mb-3">🤝 Client-Centric Approach</h3>
           <p class="text-gray-400">
-            Your success is our priority. We tailor solutions to your unique business needs.
+       Your success is our focus. We deliver tailored solutions aligned with your unique goals and challenges.
           </p>
           <div class="mt-6 pt-6 border-t border-gray-800 flex items-center">
             <div class="counter-box rounded-lg w-16 h-16 flex items-center justify-center mr-4">
@@ -672,7 +660,7 @@
             </div>
             <div>
               <span class="block text-gray-400 text-sm">Client</span>
-              <span class="block font-bold">Satisfaction</span>
+              <span class="block font-bold">Client Satisfaction</span>
             </div>
           </div>
         </div>
@@ -682,9 +670,9 @@
           <div class="w-14 h-14 rounded-lg bg-sky-900/30 flex items-center justify-center mb-6 text-sky-400 text-2xl">
             <i class="fas fa-bolt"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Rapid Implementation</h3>
+          <h3 class="text-2xl font-bold mb-3">⚡ Rapid Implementation</h3>
           <p class="text-gray-400">
-            Agile processes that deliver results faster without compromising quality.
+          Agile, streamlined workflows that accelerate project delivery — without compromising quality.
           </p>
           <div class="mt-6 pt-6 border-t border-gray-800 flex items-center">
             <div class="counter-box rounded-lg w-16 h-16 flex items-center justify-center mr-4">
@@ -692,7 +680,9 @@
             </div>
             <div>
               <span class="block text-gray-400 text-sm">Faster</span>
-              <span class="block font-bold">Delivery</span>
+              <span class="block font-bold">Faster Delivery
+
+</span>
             </div>
           </div>
         </div>
@@ -730,7 +720,7 @@
     </div>
   </section>
 
-  <section class="text-sky-400  py-20 px-6">
+  <section class="overflow-x-hidden text-sky-400  py-20 px-6">
     <div class="max-w-7xl mx-auto">
 
       <!-- Section 1: Image Left / Content Right -->
@@ -739,7 +729,7 @@
         <div class="lg:w-1/2 image-container rounded-xl left-[-50px] overflow-hidden shadow-2xl">
           <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                alt="Creative workspace" 
-               class="w-full h-auto object-cover relative  transition-transform duration-700 hover:scale-105">
+               class="w-full h-auto object-cover relative  transition-transform duration-100 hover:scale-105">
         </div>
         
         <!-- Content -->
@@ -777,7 +767,7 @@
               <span>Performance-optimized solutions</span>
             </li>
           </ul>
-          <a href="#" class="inline-flex items-center px-6 py-3 border hover:text-white hover:bg-sky-600 rounded-lg font-medium transition-colors">
+          <a href="portfolio.php" class="inline-flex items-center px-6 py-3 border hover:text-white hover:bg-sky-600 rounded-lg font-medium transition-colors">
             Explore Our Work <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
@@ -843,12 +833,12 @@
          <div class="lg:w-1/2 relative left-[50px] image-container rounded-xl overflow-hidden shadow-2xl lg:order-1">
           <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                alt="Code on computer screen" 
-               class="w-full h-auto object-cover transition-transform duration-700 hover:scale-105">
+               class="w-full h-auto object-cover transition-transform duration-100 hover:scale-105">
         </div>
       </div>
     </div>
   </section>
-   <section class="py-20 px-6 max-w-7xl mx-auto">
+   <section class="overflow-x-hidden py-20 px-6 max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <span class="inline-block px-4 py-1 bg-sky-900/30 text-sky-400 rounded-full mb-4 text-sm font-medium">TESTIMONIALS</span>
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
@@ -947,7 +937,7 @@
       </div>
     </div>
   </section>
-    <section class="py-16 my-12 logo-bg-section rounded-xl transition-all duration-300">
+  <section class="overflow-x-hidden py-16 my-12 logo-bg-section rounded-xl transition-all duration-100">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <!-- Heading -->
       <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
@@ -1019,14 +1009,13 @@
 
             // GSAP Animations for Hero Content
             gsap.from('.animate-fade-in', {
-                opacity: 0,
+                
                 y: 20,
-                duration: 1,
                 ease: "power2.out"
             });
 
             gsap.from('.animate-fade-in-delay', {
-                opacity: 0,
+                
                 y: 20,
                 duration: 1,
                 delay: 0.3,
@@ -1034,7 +1023,7 @@
             });
 
             gsap.from('.animate-fade-in-delay-more', {
-                opacity: 0,
+                
                 y: 20,
                 duration: 1,
                 delay: 0.6,
@@ -1106,7 +1095,7 @@
       // Animate service cards on scroll
       gsap.utils.toArray('.service-card').forEach((card, i) => {
         gsap.from(card, {
-          opacity: 0,
+          
           y: 50,
           duration: 0.8,
           ease: "power2.out",
@@ -1121,7 +1110,7 @@
 
       // Animate section heading
       gsap.from("#services h2", {
-        opacity: 0,
+        
         y: 30,
         duration: 1,
         ease: "power3.out",
@@ -1133,7 +1122,7 @@
       });
 
       gsap.from("#services p", {
-        opacity: 0,
+        
         y: 20,
         duration: 1,
         delay: 0.3,
@@ -1151,7 +1140,7 @@
       // Animate feature cards
       gsap.utils.toArray('.feature-card').forEach((card, i) => {
         gsap.from(card, {
-          opacity: 0,
+          
           y: 50,
           duration: 0.8,
           ease: "power2.out",
@@ -1206,7 +1195,7 @@
       // Animate images on scroll
       gsap.utils.toArray('.image-container').forEach((container, i) => {
         gsap.from(container, {
-          opacity: 0,
+          
           x: i % 2 === 0 ? 50 : -50,
           duration: 0.8,
           ease: "power2.out",
@@ -1222,7 +1211,7 @@
       gsap.utils.toArray('section').forEach((section, i) => {
         const content = section.querySelector('div:not(.image-container)');
         gsap.from(content, {
-          opacity: 0,
+          
           x: i % 2 === 0 ? -50 : 50,
           duration: 0.8,
           delay: 0.2,
@@ -1241,7 +1230,7 @@
       // Animate review cards
       gsap.utils.toArray('.review-card').forEach((card, i) => {
         gsap.from(card, {
-          opacity: 0,
+          
           y: 50,
           duration: 0.8,
           ease: "power2.out",
@@ -1257,7 +1246,7 @@
       // Animate trust badges
       gsap.utils.toArray('.text-center p-4').forEach((badge, i) => {
         gsap.from(badge, {
-          opacity: 0,
+          
           scale: 0.8,
           duration: 0.6,
           ease: "back.out(1.7)",
@@ -1272,7 +1261,7 @@
 
       // Animate section heading
       gsap.from("section h2", {
-        opacity: 0,
+        
         y: 30,
         duration: 1,
         ease: "power3.out",
@@ -1284,7 +1273,7 @@
       });
 
       gsap.from("section p", {
-        opacity: 0,
+        
         y: 20,
         duration: 1,
         delay: 0.3,
